@@ -1,0 +1,203 @@
+
+/*Override Default*/
+.logout {
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    margin: 0 auto;
+    width: 100%;
+    clear: both;
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    thead {
+        tr {
+            th, td {
+                line-height: 1;
+                padding: 15px;
+            }
+
+            th {
+                border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+                text-transform: uppercase;
+                text-align: center;
+                outline: none;
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            th, td {
+                line-height: 1;
+                padding: 15px;
+                min-width: 130px;
+            }
+
+            th {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                text-align: center;
+                color: #878787;
+            }
+
+            td {
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                vertical-align: middle;
+                text-align: center;
+                color: #878787;
+
+                &:nth-child(1) {
+                    //min-width: 300px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.table-striped {
+    & tbody {
+        & tr:nth-of-type(2n+1) {
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+    }
+}
+
+.table-hover {
+    & tbody {
+        & tr:hover {
+            & td, & th {
+                background-color: #262626;
+            }
+        }
+    }
+}
+
+.pagination {
+    li {
+        a, span {
+            color: #FFF;
+            border: 1px solid rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.05);
+            outline: none;
+
+            &:hover, &:focus{
+                color: #fff200;
+                background-color: #262626;
+                border: 1px solid rgba(255,255,255,0.1);
+            }
+        }
+    }
+
+    .active {
+        a, span {
+            background-color: #fff200;
+            border-color: #fff200;
+            color: #000;
+
+            &:hover, &:focus {
+                background-color: #fff200;
+                border-color: #fff200;
+                color: #000;
+            }
+        }
+    }
+
+    .disabled {
+        a, span {
+            border: 1px solid rgba(255,255,255,0.1);
+            background-color: rgba(255,255,255,0.05);
+
+            &:hover, &:focus {
+                border: 1px solid rgba(255,255,255,0.1);
+                background-color: rgba(255,255,255,0.05);
+            }
+        }
+    }
+}
+
+.dataTables_scrollBody {
+    margin-bottom: 30px;
+}
+
+.button-group {
+    margin-bottom: 20px;
+}
+
+/*Style on ubeer*/
+.content-dashboard {
+    background: #212121;
+    margin-bottom: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    padding: 15px;
+
+    a {
+        text-decoration: underline;
+    }
+
+    table.dataTable {
+        margin-top: 15px;
+        margin-bottom: 15px !important;
+    }
+}
+
+.figure-block {
+    display: flex;
+    width: 250px;
+    height: 150px;
+    align-items: center;
+    overflow: hidden;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    border: 2px solid #FFF;
+    margin: auto;
+}
+
+.btn-export {
+    background-color: #fff200;
+    border: 2px solid #fff200;
+    padding: 8px 20px;
+    font-weight: 700;
+    color: #393939;
+    font-size: 28px;
+    line-height: 1;
+    outline: none;
+
+    &:hover {
+        background-color: transparent;
+        color: #FFF;
+    }
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    width: auto;
+    max-width: 455px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.figure-feed {
+    max-height: 500px;
+    overflow: hidden;
+
+    img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+}

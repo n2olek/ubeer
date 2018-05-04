@@ -1,0 +1,129 @@
+.has-bg-machucan {
+    background: url('../images/bg_machucan.png') 50% #ffd800;
+    color: #010101;
+
+    a {
+        color: #010101;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .header-title {
+        img {
+            display: block;
+            width: 200px;
+            margin: 0 auto 10px;
+        }
+    }
+
+    h1 {
+        font-weight: 700;
+        font-size: 48px;
+        letter-spacing: 0.03em;
+    }
+
+    .header {
+        img {
+            margin-bottom: -30px;
+        }
+    }
+}
+
+.header-line {
+    margin: 20px auto 0;
+    background: url('../images/frame_top.png') repeat-x;
+    height: 10px;
+    width: 100%;
+}
+
+.figure-img {
+    img {
+        margin: 30px auto;
+            max-width: 400px;
+        max-height: 400px;
+    }
+}
+
+.btn-login {
+    height: 65px;
+    margin: 20px auto 25px;
+    text-align: center;
+
+    &:hover {
+        height: 65px;
+        margin: 25px auto 20px;
+    }
+
+    button {
+        background-color: #000;
+        width: 310px;
+        height: 65px;
+        color: #fff200;
+        border: none;
+        border-radius: 10px;
+        font-size: 30px;
+        border-bottom: 5px solid #444;
+        cursor: pointer;
+        outline: none;
+
+        i {
+            vertical-align: middle;
+            font-size: 40px;
+        }
+
+        &:hover {
+            border: none;
+        }
+
+        span {
+            margin-left: 30px;
+            font-weight: 700;
+            margin: 0;
+            vertical-align: middle;
+            font-size: 24px;
+            text-transform: uppercase;
+            padding-left: 20px;
+        }
+    }
+}
+
+.team-detail {
+    margin-bottom: 30px;
+    font-size: 26px;
+
+    h3 {
+        font-size: 40px;
+        font-family: DBAdmanX-Bold;
+    }
+
+    ol {
+        padding-left: 20px;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.footer {
+
+
+    &-block {
+        p {
+            margin-bottom: 20px;
+        }
+    }
+
+    &-secton-machucan {
+        font-weight: 700;
+    }
+
+    &-line {
+        background: url('../images/frame_bottom.png') repeat-x;
+        height: 10px;
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+}

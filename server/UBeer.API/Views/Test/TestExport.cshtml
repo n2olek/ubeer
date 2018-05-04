@@ -1,0 +1,38 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <button id="ExportExcel" name="ExportExcel"> ExportExcel </button>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "http://localhost:10082/api/ExportExcel",
+                "method": "GET",
+                "headers": {
+                    "cache-control": "no-cache",
+                    "postman-token": "52f2a2ab-8afa-daf8-fbd5-5f5d85ab875b"
+                }
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+            });
+        });
+    </script>
+</body>
+
+</html>

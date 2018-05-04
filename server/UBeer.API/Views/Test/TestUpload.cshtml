@@ -1,0 +1,23 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        <form method="POST" class="form-horizontal" action="http://localhost:10082/api/UploadImage"  enctype="multipart/form-data">
+            <input type="file" name="imageFile" />
+            <input type="text" id="phoneNumber" name="mobilePhone" class="input-medium bfh-phone" data-format="+66 (ddd) ddd-dddd">
+            <input type="submit" value="ok" />
+        </form> 
+</div>
+</body>
+</html>

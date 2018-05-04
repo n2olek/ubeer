@@ -1,0 +1,54 @@
+@mixin ellipsis() {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+    width: 100%;
+}
+
+@mixin icon-styles() {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+}
+
+@mixin transform($transform) {
+    transform: $transform;
+}
+
+@mixin table-cell-top() {
+    display: table-cell;
+    vertical-align: top;
+}
+
+@mixin caption-full () {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@mixin optional-at-root($sel) {
+        @at-root #{if(not &, $sel, selector-append(&, $sel))} {
+        @content;
+    }
+}
+
+@mixin placeholder {
+    @include optional-at-root('::-webkit-input-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root('::-moz-placeholder') {
+        @content;
+    }
+
+    @include optional-at-root(':-ms-input-placeholder') {
+        @content;
+    }
+}

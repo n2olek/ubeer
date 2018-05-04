@@ -1,0 +1,35 @@
+/*Override Default*/
+body {
+    background-color: #000;
+    color: #FFF;
+    line-height: 1;
+    font-size: 20px;
+    font-family: DBAdmanX;
+}
+
+a, a:focus, a:active {
+    color: #fff200;
+
+    &:hover {
+        color: #FFF;
+        text-decoration: none;
+    }
+}
+
+h1, h2 {
+    font-family: 'PSLImperial';
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 90px;
+    margin-bottom: 30px;
+    color: #fff200;
+    letter-spacing: 0.02em;
+
+    span {
+        text-transform: uppercase;
+        font-family: 'PSLImperial-Bold';
+
+    }
+}

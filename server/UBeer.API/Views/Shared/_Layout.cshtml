@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<!--[if IE 8]>		<html class="lt-ie10 lt-ie9 no-js" lang="en"><![endif]-->
+<!--[if IE 9]>		<html class="lt-ie10 modern no-js" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="modern no-js" lang="en">
+<!--<![endif]-->
+<head>
+    @using StackExchange.Profiling;
+    <title>UBeer</title>
+
+    <!-- General Data -->
+    <meta charset="utf-8" />
+    <meta name="robots" content="all" />
+    <meta name="author" content="UBeer" />
+    <meta name="copyright" content="Copyright 2015 UBeer" />
+    <meta name="description" content="UBeer" />
+    <meta name="keywords" content="UBeer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--
+        Bootstrap is not supported in the old Internet Explorer compatibility modes.
+        The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered
+        Edge mode tells IE to display content in the highest mode available
+        -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="./Scripts/html5shiv.min.js"></script>
+        <script src="./Scripts/respond.min.js"></script>
+    <![endif]-->
+    @RenderSection("ContentBlock", false)
+    @RenderSection("ScriptBlock", false)
+</head>
+<body>
+    @MiniProfiler.RenderIncludes()
+    @*<nav class="UBeer-main-navigation">
+        <div class="UBeer-logo"><img src="./images/logo-UBeer.gif" alt="UBeer" /></div>
+    </nav>*@<!-- Main Navigation -->
+    
+    @RenderBody()
+
+</body>
+</html>

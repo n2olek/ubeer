@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'DBAdmanX';
+    src: url('#{$font-path}/db-adman/dbadmanx.eot?v=#{$version}');
+    src: url('#{$font-path}/db-adman/dbadmanx.eot?#iefix&v=#{$version}') format('embedded-opentype'),
+       url('#{$font-path}/db-adman/dbadmanx.woff2?v=#{$version}') format('woff2'),
+       url('#{$font-path}/db-adman/dbadmanx.woff?v=#{$version}') format('woff'),
+       url('#{$font-path}/db-adman/dbadmanx.ttf?v=#{$version}') format('truetype'),
+       url('#{$font-path}/db-adman/dbadmanx.svg?v=#{$version}#dbadmanxregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+    font-family: 'DBAdmanX-Bold';
+    src: url('#{$font-path}/db-adman/dbadmanx-bold.eot?v=#{$version}');
+    src: url('#{$font-path}/db-adman/dbadmanx-bold.eot?#iefix&v=#{$version}') format('embedded-opentype'),
+       url('#{$font-path}/db-adman/dbadmanx-bold.woff2?v=#{$version}') format('woff2'),
+       url('#{$font-path}/db-adman/dbadmanx-bold.woff?v=#{$version}') format('woff'),
+       url('#{$font-path}/db-adman/dbadmanx-bold.ttf?v=#{$version}') format('truetype'),
+       url('#{$font-path}/db-adman/dbadmanx-bold.svg?v=#{$version}#dbadmanxbold') format('svg');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+    font-family: 'PSLImperial';
+    src: url('#{$font-path}/psl-imperial/psl-imperial.eot?v=#{$version}');
+    src: url('#{$font-path}/psl-imperial/psl-imperial.eot?#iefix&v=#{$version}') format('embedded-opentype'),
+       url('#{$font-path}/psl-imperial/psl-imperial.woff2?v=#{$version}') format('woff2'),
+       url('#{$font-path}/psl-imperial/psl-imperial.woff?v=#{$version}') format('woff'),
+       url('#{$font-path}/psl-imperial/psl-imperial.ttf?v=#{$version}') format('truetype'),
+       url('#{$font-path}/psl-imperial/psl-imperial.svg?v=#{$version}#pslimperial') format('svg');
+       font-weight: normal;
+       font-style: normal;
+}
+
+@font-face {
+    font-family: 'PSLImperial-Bold';
+    src: url('#{$font-path}/psl-imperial/psl-imperial-bold.eot?v=#{$version}');
+    src: url('#{$font-path}/psl-imperial/psl-imperial-bold.eot?#iefix&v=#{$version}') format('embedded-opentype'),
+       url('#{$font-path}/psl-imperial/psl-imperial-bold.woff2?v=#{$version}') format('woff2'),
+       url('#{$font-path}/psl-imperial/psl-imperial-bold.woff?v=#{$version}') format('woff'),
+       url('#{$font-path}/psl-imperial/psl-imperial-bold.ttf?v=#{$version}') format('truetype'),
+       url('#{$font-path}/psl-imperial/psl-imperial-bold.svg?v=#{$version}#pslimperialbold') format('svg');
+       font-weight: normal;
+       font-style: normal;
+}
+

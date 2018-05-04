@@ -1,0 +1,17 @@
+node_modules
+bower_components
+_DEV
+README.md
+package.json
+gulpfile.js
+server/.vs/config/applicationhost.config
+/server/.vs/UBeer/v15/sqlite3/storage.ide
+server/.vs/UBeer/v15/Server/sqlite3/storage.ide-wal
+server/.vs/UBeer/v15/Server/sqlite3/storage.ide
+server/.vs/UBeer/v15/Server/sqlite3/db.lock
+server/.vs/UBeer/v15/Server/sqlite3/storage.ide-shm
+web/.vs/slnx.sqlite
+web/.vs/ProjectSettings.json
+web/.vs/web/v15/.suo
+web/.vs/config/applicationhost.config
+web/.vs/VSWorkspaceState.json
